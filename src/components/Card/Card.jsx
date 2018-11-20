@@ -3,7 +3,9 @@ import React from 'react';
 
 const Card = ( props ) => {
     return(
-        <div>a card</div>
+        <div>
+            <h3>{ props.title }</h3>
+        </div>
     )
 }
 

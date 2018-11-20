@@ -1,15 +1,24 @@
 import React from 'react'; 
 import ActivityFeed from '../../containers/ActivityFeed/ActivityFeed'; 
-import Card from '../Cards/Cards';
+import CardDisplay from '../../containers/CardDisplay/CardDisplay';
+import mockData from '../../Helpers/mockData'; 
 
 class RightSide extends React.Component{
+
+    constructor( props ){
+        super( props );
+        this.state = {
+            data: mockData.activities
+        }
+    }
+
 
 
     render(){
         return(
             < div >
                 < ActivityFeed /> 
-                < Card /> 
+                < CardDisplay collection={ this.state.data } /> 
             </ div >
         )
 

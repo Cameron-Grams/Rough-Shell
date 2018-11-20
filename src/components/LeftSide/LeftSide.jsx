@@ -1,15 +1,22 @@
 import React from 'react'; 
 import ProfileBasic from '../../containers/ProfileBasic/ProfileBasic'; 
-import Card from '../Cards/Cards'; 
+import CardDisplay from '../../containers/CardDisplay/CardDisplay'; 
+import mockData from '../../Helpers/mockData'; 
 
 class LeftSide extends React.Component{
 
+    constructor( props ){
+        super( props );
+        this.state = {
+            data: mockData.cards
+        }
+    }
 
     render(){
         return(
             < div >
                 < ProfileBasic /> 
-                < Card /> 
+                < CardDisplay collection={ this.state.data } /> 
             </ div >
         )
 
