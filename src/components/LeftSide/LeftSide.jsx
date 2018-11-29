@@ -2,6 +2,7 @@ import React from 'react';
 import ProfileBasic from '../../containers/ProfileBasic/ProfileBasic'; 
 import CardDisplay from '../../containers/CardDisplay/CardDisplay'; 
 import mockData from '../../Helpers/mockData'; 
+import '../../App.css'
 
 class LeftSide extends React.Component{
 
@@ -14,7 +15,7 @@ class LeftSide extends React.Component{
 
     render(){
         return(
-            < div >
+            < div className="leftSideDiv" >
                 < ProfileBasic /> 
                 < CardDisplay collection={ this.state.data } /> 
             </ div >

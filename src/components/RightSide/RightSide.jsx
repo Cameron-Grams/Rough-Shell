@@ -2,6 +2,7 @@ import React from 'react';
 import ActivityFeed from '../../containers/ActivityFeed/ActivityFeed'; 
 import CardDisplay from '../../containers/CardDisplay/CardDisplay';
 import mockData from '../../Helpers/mockData'; 
+import '../../App.css'
 
 class RightSide extends React.Component{
 
@@ -16,7 +17,7 @@ class RightSide extends React.Component{
 
     render(){
         return(
-            < div >
+            < div className="rightSideDiv">
                 < ActivityFeed /> 
                 < CardDisplay collection={ this.state.data } /> 
             </ div >
