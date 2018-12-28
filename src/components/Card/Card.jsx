@@ -23,7 +23,7 @@ const Card = ( props ) => {
     return(
         <div style={ individualCardStyle }>
             <div style={ videoCardDiv } >
-                <ReactPlayer url={ props.cardUrl } playing={ true } width={ "100%" } controls ></ReactPlayer> 
+                <ReactPlayer url={ props.cardUrl } playing={ "true" } width={ "100%" } controls ></ReactPlayer> 
             </div>
             <div style={ otherInfoDiv } > 
                 <h3>{ props.title }</h3>
