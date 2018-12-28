@@ -2,22 +2,32 @@ module.exports = {
     cards: [
         {
             title: "One",
+            cardUrl: "https://youtu.be/OrQ1JiMqVYI?list=PLxYZWWItIp7tdFaI8erS6wzjCDWi9ndee",
             content: "Random Text"
         },
         {
             title: "Two",
+            cardUrl: "https://youtu.be/vOxmsqd8f58?list=PLxYZWWItIp7tdFaI8erS6wzjCDWi9ndee",
             content: "Random Text"
         },
         {
             title: "Three",
+            cardUrl: "https://youtu.be/TfMv2WlYxAA?list=PLxYZWWItIp7tdFaI8erS6wzjCDWi9ndee",
             content: "Random Text"
         },
         {
             title: "Four",
+            cardUrl: "https://youtu.be/RN8ss708b6M?list=PLxYZWWItIp7tdFaI8erS6wzjCDWi9ndee",
             content: "Random Text"
         },
         {
             title: "Five",
+            cardUrl: "https://youtu.be/CDurH6sJiW8?list=PLxYZWWItIp7tdFaI8erS6wzjCDWi9ndee",
+            content: "Random Text"
+        },
+        {
+            title: "Six",
+            cardUrl: "https://youtu.be/jK0C8s7Ulio?list=PLxYZWWItIp7tdFaI8erS6wzjCDWi9ndee",
             content: "Random Text"
         }
     ],

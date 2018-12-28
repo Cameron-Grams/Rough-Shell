@@ -13,15 +13,20 @@ class CardDisplay extends React.Component{
 
     render(){
         console.log( ' in card display with: ', this.state.data );
+        const cardDisplayStyle = {
+            display: "flex",
+            justifyContent: "space-around",
+            flexWrap: "wrap"
+        }
 
         let displayedCards = this.state.data.map( ( item, index ) => {
             return(
-                < Card key={ index } title={ item.title } /> 
+                < Card key={ index } title={ item.title } cardUrl={ item.cardUrl } content={ item.content } /> 
             )
         } ); 
        
         return(
-            <div>
+            <div style={ cardDisplayStyle }>
             { displayedCards }
             </div>
         )

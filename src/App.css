@@ -5,7 +5,10 @@
 .rightSideDiv{
   flex: 1;
   border: 1px solid red;
+  display : none; 
 }
+
+/* specific to the video grid: right display none, left flex  */
 
 .leftSideDiv{
   flex: 2;
