@@ -13,7 +13,8 @@ class RightSide extends React.Component{
         }
     }
 
-
+/* using the same iteration of CardDisplay will produce an error: the keys for the left 
+   and right side are the same, so the elements of the DOM are indistinguishable */
 
     render(){
         return(

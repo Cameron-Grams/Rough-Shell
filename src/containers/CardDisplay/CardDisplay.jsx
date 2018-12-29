@@ -19,9 +19,10 @@ class CardDisplay extends React.Component{
             flexWrap: "wrap"
         }
 
-        let displayedCards = this.state.data.map( ( item, index ) => {
+        let displayedCards = this.state.data.map( ( item ) => {
+            console.log( item.id )
             return(
-                < Card key={ index } title={ item.title } cardUrl={ item.cardUrl } content={ item.content } /> 
+                < Card key={ `${ item.id }` } title={ item.title } cardUrl={ item.cardUrl } content={ item.content } /> 
             )
         } ); 
        
